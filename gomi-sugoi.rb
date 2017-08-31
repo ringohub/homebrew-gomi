@@ -6,11 +6,11 @@ class Gomi < Formula
     if OS.mac?
         if Hardware::CPU.is_64_bit?
             url "https://github.com/b4b4r07/gomi/releases/download/v#{HOMEBREW_GOMI_VERSION}/gomi_darwin_amd64"
-            sha1 "5cbbc80f7f97557f2004ce475546f35c78bb79d1"
+            sha256 '3543835615a15d55f4b2899a6f0889ce94d029baebae9ab818d70166e1110fea'
             KIND="amd64"
         else
             url "https://github.com/b4b4r07/gomi/releases/download/v#{HOMEBREW_GOMI_VERSION}/gomi_darwin_386"
-            sha1 "53450d3023a9d136d9748bfcdc881d461b862748"
+            sha256 '5f75c79221e73d5aee7c18a67d51dd39384f378fdf7b3a13445578f9ae16f0d4'
             KIND="386"
         end
     elsif OS.linux?

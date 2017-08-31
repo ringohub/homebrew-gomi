@@ -4,7 +4,7 @@ class Gomi < Formula
     homepage "https://github.com/b4b4r07/gomi"
     version "0.1.5"
     url "https://github.com/b4b4r07/gomi/releases/download/v#{version}/gomi"
-    sha1 "2b3b5db55a6f6789fe8a649cc56f89f0fd487640"
+    sha256 "dee9566d151f5d947400b9c3aef48eb484c86fea24e019e4f02a2a8525b95e3b"
 
     def install
         bin.install 'gomi'
@@ -17,14 +17,14 @@ class Gomi < Formula
     end
 
     def caveats; msg = <<-'EOS'
-                       _ 
+                       _
                       (_)
-  __ _  ___  _ __ ___  _ 
+  __ _  ___  _ __ ___  _
  / _` |/ _ \| '_ ` _ \| |
 | (_| | (_) | | | | | | |
  \__, |\___/|_| |_| |_|_|
-  __/ |                  
- |___/                   
+  __/ |
+ |___/
 
   Type `gomi --help' to start
 
