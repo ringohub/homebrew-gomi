@@ -1,16 +1,16 @@
 require 'formula'
 
-HOMEBREW_GOMI_VERSION='0.1.4'
+HOMEBREW_GOMI_VERSION='0.1.7'
 class Gomi < Formula
     homepage "https://github.com/b4b4r07/gomi"
     if OS.mac?
         if Hardware::CPU.is_64_bit?
             url "https://github.com/b4b4r07/gomi/releases/download/v#{HOMEBREW_GOMI_VERSION}/gomi_darwin_amd64"
-            sha256 '3543835615a15d55f4b2899a6f0889ce94d029baebae9ab818d70166e1110fea'
+            sha256 'f29424a1e2ecaf860b63a0bef5b9297e251c681928c7682f9c2818c11e46e2f5'
             KIND="amd64"
         else
             url "https://github.com/b4b4r07/gomi/releases/download/v#{HOMEBREW_GOMI_VERSION}/gomi_darwin_386"
-            sha256 '5f75c79221e73d5aee7c18a67d51dd39384f378fdf7b3a13445578f9ae16f0d4'
+            sha256 '39e824375ea7ab6dcefba7b671bb1f48c3fe103447c8d2303f3c4ff40993a93c'
             KIND="386"
         end
     elsif OS.linux?
