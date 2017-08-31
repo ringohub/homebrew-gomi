@@ -4,7 +4,7 @@ HOMEBREW_GOMI_VERSION='0.1.4'
 class Gomi < Formula
     homepage "https://github.com/b4b4r07/gomi"
     if OS.mac?
-        if Hardware.is_64_bit?
+        if Hardware::CPU.is_64_bit?
             url "https://github.com/b4b4r07/gomi/releases/download/v#{HOMEBREW_GOMI_VERSION}/gomi_darwin_amd64"
             sha1 "5cbbc80f7f97557f2004ce475546f35c78bb79d1"
             KIND="amd64"
